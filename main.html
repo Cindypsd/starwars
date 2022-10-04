@@ -14,23 +14,25 @@
 
 
   <!-- LOGO -->
-<div class="titulo container text-lg-center">
-  <img id="imgLogo" src="./assets/images/logo_SW.png" alt="">
+<div class="titulo container text-lg-center mb-5">
+  <img id="imgLogo" src="./assets/images/logo_SW.png" alt="" onmouseover="mostrarTabla()" onmouseout="mostrarPesonajes()">
 </div> 
 
 <!-- CONTENIDO -->
-<div class="container align-content-between">
+<div class="container align-content-between" id="infoPersonajes">
+
   <div class="row">
 
-    <div class="cardPersonaje col-6 cardChewbacca">
+    <div class="cardPersonaje col-6 cardDarth">
       <div class="content">
           <div class="front">
-              <h3 class="title"><img src="./assets/images/chewe.png" alt=""></h3>
+              <h3 class="title"><img src="./assets/images/darthvader.png" alt=""></h3>
           </div>
     
           <div class="back">
-              <p class="description">
-                  Cool description so you can read it too my friend
+            <h3 id="nombreDarth" ></h3>
+              <p class="description" id="infoDarth">
+                  
               </p>
           </div>
       </div>
@@ -43,24 +45,15 @@
           </div>
     
           <div class="back">
-              <p class="description">
-                  Cool description so you can read it too my friend
+              <h3 id="nombreLeia"></h3>
+              <p class="description" id="infoLeia">
+            
               </p>
           </div>
       </div>
     </div>
   
-
-
-
-
   </div>
-  
-
-
-
-
-
 
 </div>
 
@@ -71,4 +64,5 @@
 
 
 </body>
+<script src="./assets/js/main.js"></script>
 </html>
