@@ -1,0 +1,74 @@
+body{
+  background-image: url(../images/stars_backgorund.png);
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* display: flex; */
+
+}
+
+#imgLogo{
+  margin-top: 3em ;
+
+}
+
+.personajes{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+/* From uiverse.io by @JoseIsra */
+.cardPersonaje {
+  width: 12rem;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  transition: all 2.25s;
+  background-image: url(../images/stars_backgorund.png);
+  height: 150px;
+  width: 150px;
+  padding: 5em;
+  color: white;
+  transform-style: preserve-3d;
+}
+
+.cardPersonaje:hover .content {
+  transform: rotateY(0.5turn);
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 2em;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.title {
+  transform: translateZ(5rem);
+  font-size: 2rem;
+}
+
+.subtitle {
+  transform: translateZ(2rem);
+}
+
+.back {
+  transform: rotateY(0.5turn);
+  background-color: rgba(0, 0, 0, 0.287);
+  color: white;
+}
+
+.description {
+  transform: translateZ(3rem);
+}
